@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fontawesome_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fontawesome/fontawesome_{{ version }}.tar.gz
-  sha256: 572db64d1b3c9be301935e0ca7baec69f3a6e0aa802e23f1f224b3724259df64
+  sha256: 4deefcf4d4580d84213f863351c2a23c39adbd2f8762d7477ec2faa8235a1a31
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -41,10 +41,7 @@ test:
 about:
   home: https://github.com/rstudio/fontawesome
   license: MIT
-  summary: Easily and flexibly insert 'Font Awesome' icons into 'R Markdown' documents and 'Shiny'
-    apps. These icons can be inserted into HTML content through inline 'SVG' tags or
-    'i' tags. There is also a utility function for exporting 'Font Awesome' icons as
-    'PNG' images for those situations where raster graphics are needed.
+  summary: Easily and flexibly insert 'Font Awesome' icons into 'R Markdown' documents and 'Shiny' apps. These icons can be inserted into HTML content through inline 'SVG' tags or 'i' tags. There is also a utility function for exporting 'Font Awesome' icons as 'PNG' images for those situations where raster graphics are needed.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
