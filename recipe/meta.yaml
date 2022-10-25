@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fontawesome_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fontawesome/fontawesome_{{ version }}.tar.gz
-  sha256: 4deefcf4d4580d84213f863351c2a23c39adbd2f8762d7477ec2faa8235a1a31
+  sha256: 760a0bc5b50ddbce1160b123f3b3d76342167519d75641dc2c5b952fa8d4242f
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
