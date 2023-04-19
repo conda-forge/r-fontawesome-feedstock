@@ -1,11 +1,11 @@
-About r-fontawesome
-===================
+About r-fontawesome-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fontawesome-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rstudio/fontawesome
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fontawesome-feedstock/blob/main/LICENSE.txt)
 
 Summary: Easily and flexibly insert 'Font Awesome' icons into 'R Markdown' documents and 'Shiny' apps. These icons can be inserted into HTML content through inline 'SVG' tags or 'i' tags. There is also a utility function for exporting 'Font Awesome' icons as 'PNG' images for those situations where raster graphics are needed.
 
