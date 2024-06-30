@@ -1,6 +1,5 @@
 {% set version = "0.5.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-fontawesome
@@ -13,8 +12,7 @@ source:
   sha256: da3de2a9717084d1400d48edd783f06c66b8c910ce9c8d753d1b7d99be1c5cc9
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
